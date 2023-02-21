@@ -174,7 +174,7 @@ section label {
 }
 
 
-@media(max-height: 420px) {
+@media(max-height: 400px) {
     header {top: 5vh}
 }
 /* #c2 {

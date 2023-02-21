@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'poppins';
+    /* transition: 0.5s; */
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+    top: 25%;
+    left: 10%;
+
+    color: #fff;
+    opacity: 0.75;
+
+    transition: 0.5s;
+    cursor: default;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    background-color: #1d2b3a;
+
+}
+
+.input-box {
+    margin-bottom: 30px;
+
+    position: relative;
+    width: 250px;
+
+    /* float: left; */
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+input:valid ~ span, input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 15px;
+    background-color: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+
+}
+
+.input-box:nth-child(2) input:valid ~ span,
+.input-box:nth-child(2) input:focus ~ span
+{
+    background-color: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+input:valid , input:focus {
+    border: 1px solid #00dfc4;
+}
+
+#generate {
+    background-color: #1d2b3a;
+    color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 0.9em;
+    transition: 0.5s;
+    z-index: 88;
+    float: right;
+}
+
+#generate:active {
+    color: #00dfc4;
+    border-color: #00dfc4;
+}
+
+input:hover, #generate:hover {
+    color: #00dfc4;
+    border-color: #00dfc4;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+section label {
+    color: #fff;
+    font-size: 1.15em;
+    transition: 0.5s ease;
+    visibility: hidden;
+}
+
+#day {
+    font-family: 'Ubuntu', arial;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    /* margin-bottom: -15px; */
+}
+
+#degree {
+    color: #00dfc4;
+    font-size: 10em;
+    z-index: 1;
+}
+
+#city {
+    font-size: 2.25em;
+    z-index: 1;
+}
+
+.circ {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+}
+
+#c1 {
+    background-color: rgba(255, 255, 255, 0.05);
+    top: 0px;
+    left: -150px;
+    transition: 0.5s;
+}
+
+@media(max-width: 400px) {
+    body {flex-direction: column;}
+    header {position: static;}
+}
+
+
+@media(max-height: 400px) {
+    header {top: 5vh}
+}
+/* #c2 {
+    background-color: rgba(255, 255, 255, 0.05);
+    bottom: -150px;
+    left: 150px;
+} */
+
+/* @media(max-width:400px) {
+    
+} */

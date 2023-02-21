@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+</head>
+<body>
+
+    <header><h1>Weather checker</h1></header>
+
+    <main>
+        <div class="input-box">
+            <input id="cityName" class="input_text" type="text" required>
+            <span>city name</span>
+        </div>
+        <div class="input-box">
+            <input id="i2" class ="input_text" type="text" required>
+            <span>country name</span>
+        </div>
+        <button id="generate">Check</button>
+    </main>
+
+    <section>
+        <label id="day"></label>
+        <label id="degree"></label>
+        <label id="city"></label>
+
+        <div id="c1" class="circ"></div>
+        <div id="c2" class="circ"></div>
+        <div class="circ"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

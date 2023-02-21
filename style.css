@@ -168,13 +168,13 @@ section label {
     transition: 0.5s;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 420px) {
     body {flex-direction: column;}
     header {position: static;}
 }
 
 
-@media(max-height: 400px) {
+@media(max-height: 420px) {
     header {top: 5vh}
 }
 /* #c2 {
